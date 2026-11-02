@@ -1,16 +1,116 @@
+.cabeçalho__titulo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #6bd4fd;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
 .nav__list {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     gap: 1rem;
 }
 
+@media (max-width: 500px) {
+    .nav__list {
+        grid-template-columns: auto;
+        gap: 1rem;
+    }
+}
+
 .nav__link {
     text-decoration: none;
-    color: white;
+    color: rgb(171, 53, 175);
     font-weight: bold;
     font-size: 1.2rem;
 }
 
 .nav__link:hover {
-    color: #0400ff;
+    color: #0099ff;
+}
+
+.pagina__titulo {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #f5c55c;
+}
+
+.depoimento__titulo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+    color: #889bf3;
+}
+
+.informacoes-contato__titulo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+    color: #778ef5;
+}
+
+.pagina__contato {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #f5c55c;
+}
+
+.informacoes-contato__link {
+    color: #f5c55c;
+    text-decoration: none;
+}
+
+.informacoes-contato__link:hover {
+    color: #0099ff;
+}
+
+.formulario-contato__campo {
+    background-color: transparent;
+    border-radius: 0.2rem;
+    border: 1px solid #000000;
+    padding: 0.5rem;
+    width: 70%;
+    color: rgb(255, 255, 255);
+}
+
+.formulario-contato__campo:focus {
+    outline: none;
+    border-color: #0099ff;
+}
+
+.formulario-contato__campo::placeholder {
+    color: rgba(255, 56, 195, 0.7);
+}
+
+.formulario-contato__botao {
+    cursor: pointer;
+    border: none;
+    border-radius: 0.7rem;
+    padding: 0.5rem;
+    width: 35%;
+    background-color: #660666;
+    color: #1ecefa;
+}
+
+.formulario-contato__botao:hover {
+    background-color: #0099ff;
+    color: #000000;
+}
+
+@media (max-width: 500px) {
+
+    .formulario-contato__campo {
+        width: 90%;
+    }
+
+    .formulario-contato__botao {
+        width: 70%;
+    }
+
 }
